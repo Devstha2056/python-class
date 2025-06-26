@@ -21,10 +21,10 @@ def daily_commit():
         # Step 4: Push to remote (optional)
         subprocess.run(["git", "push"], check=True)
 
-        print("✅ Daily commit pushed.")
+        print("Daily commit pushed.")
 
     except subprocess.CalledProcessError as e:
-        print("❌ Git command failed:", e)
+        print("Git command failed:", e)
 
 if __name__ == "__main__":
     daily_commit()
