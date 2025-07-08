@@ -117,20 +117,34 @@ match day:
 #     print(f"{user_input} is not a prime number.") 
 
 
-def is_prime(i,j):
-    if i <= 1:
-        return False
-    for n in range(2, i):
-        if i % n == 0:
-            return False
-    return True
+# def is_prime(i,j):
+#     if i <= 1:
+#         return False
+#     for n in range(2, i):
+#         if i % n == 0:
+#             return False
+#     return True
 
-for i in range(2, 101):
-    if is_prime(i, 0):
-        print(f"{i} is a prime number.")
+# for i in range(2, 101):
+#     if is_prime(i, 0):
+#         print(f"{i} is a prime number.")
 
-user_input = int(input("Enter a number to check if it's prime: "))
-if is_prime(user_input, 0):
-    print(f"{user_input} is a prime number.")
-else:     
-    print(f"{user_input} is not a prime number.")         
+# user_input = int(input("Enter a number to check if it's prime: "))
+# if is_prime(user_input, 0):
+#     print(f"{user_input} is a prime number.")
+# else:     
+#     print(f"{user_input} is not a prime number.")       
+
+
+def print_rose():   
+    print("        _ _")
+    print("      _{ ' }_")
+    print("     { `.!.` }")
+    print("     `-..-.-'") 
+    print("       /   \\")
+    print("      |     |")
+    print("      |     |")
+    print("       \\   /")
+    print("        `-'")    
+if __name__ == "__main__":
+    print_rose()  
