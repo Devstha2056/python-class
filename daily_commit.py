@@ -11,7 +11,7 @@ def daily_commit():
         with open("daily.log", "a") as log_file:
             log_file.write(f"Daily commit at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
 
-        # Step 2: Stage everything
+        # Step 2: Stage everythingg
         subprocess.run(["git", "add", "."], check=True)
 
         # Step 3: Commit with timestamp message
