@@ -148,3 +148,14 @@ def print_rose():
     print("        `-'")    
 if __name__ == "__main__":
     print_rose()  
+
+
+def print_dev():
+     print("🌸 🌸🌸       🌸    🌸       🌸 ")
+     print("🌸       🌸   🌸          🌸      ")
+     print("🌸       🌸   🌸    🌸  🌸   ")
+     print("🌸       🌸   🌸            🌸 " \
+     "                                    🌸    ")
+     print("🌸 🌸🌸       🌸    🌸      ")
+if __name__ =="__main__":
+     print_dev()
