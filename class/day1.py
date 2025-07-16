@@ -136,26 +136,51 @@ match day:
 #     print(f"{user_input} is not a prime number.")       
 
 
-def print_rose():   
-    print("        _ _")
-    print("      _{ ' }_")
-    print("     { `.!.` }")
-    print("     `-..-.-'") 
-    print("       /   \\")
-    print("      |     |")
-    print("      |     |")
-    print("       \\   /")
-    print("        `-'")    
+# def print_rose():   
+#     print("        _ _")
+#     print("      _{ ' }_")
+#     print("     { `.!.` }")
+#     print("     `-..-.-'") 
+#     print("       /   \\")
+#     print("      |     |")
+#     print("      |     |")
+#     print("       \\   /")
+#     print("        `-'")    
+# if __name__ == "__main__":
+#     print_rose()  
+
+
+# def print_dev():
+#      print("🌸 🌸🌸       🌸    🌸       🌸 ")
+#      print("🌸       🌸   🌸          🌸      ")
+#      print("🌸       🌸   🌸    🌸  🌸   ")
+#      print("🌸       🌸   🌸            🌸 " \
+#      "                                    🌸    ")
+#      print("🌸 🌸🌸       🌸    🌸      ")
+# if __name__ =="__main__":
+#      print_dev()
+
+
+#     print colorama
+import colorama
+from colorama import Fore, Back, Style  
+
+def print_colored_text():
+    print(Fore.RED + "This text is red")
+    print(Fore.GREEN + "This text is green")
+    print(Fore.BLUE + "This text is blue")
+    print(Back.YELLOW + "This background is yellow")
+    print(Style.RESET_ALL + "Back to normal text")    
+
 if __name__ == "__main__":
-    print_rose()  
-
-
-def print_dev():
-     print("🌸 🌸🌸       🌸    🌸       🌸 ")
-     print("🌸       🌸   🌸          🌸      ")
-     print("🌸       🌸   🌸    🌸  🌸   ")
-     print("🌸       🌸   🌸            🌸 " \
-     "                                    🌸    ")
-     print("🌸 🌸🌸       🌸    🌸      ")
-if __name__ =="__main__":
-     print_dev()
+    colorama.init(autoreset=True)  # Initialize colorama
+    print_colored_text()
+    # Example of printing colored text
+    print(Fore.CYAN + "Hello, World in Cyan!")
+    print(Fore.YELLOW + "Hello, World in Yellow!")    
+    print(Fore.RED + "H" + Fore.GREEN + "E" + Fore.BLUE + "L" + Fore.YELLOW + "L" + Fore.MAGENTA + "O")     
+ 
+    print(Fore.RED + "H" + Fore.GREEN + "E" + Fore.BLUE + "L" + Fore.YELLOW + "L" + Fore.MAGENTA + "O")
+    print(Fore.RED + "H" * 10 + Fore.GREEN + "E" * 10 + Fore.BLUE + "L" * 10 + Fore.YELLOW + "L" * 10 + Fore.MAGENTA + "O" * 10)
+    print(Fore.RED + "H" * 20 + Fore.GREEN + "E" * 20 + Fore.BLUE + "L" * 20 + Fore.YELLOW + "L" * 20 + Fore.MAGENTA + "O" * 20)
+    print(Fore.RED + "H"        * 30 + Fore.GREEN + "E" * 30 + Fore.BLUE + "L" * 30 + Fore.YELLOW + "L" * 30 + Fore.MAGENTA + "O" * 30)         
