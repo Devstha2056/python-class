@@ -162,25 +162,56 @@ match day:
 
 
 #     print colorama
-import colorama
-from colorama import Fore, Back, Style  
+# import colorama
+# from colorama import Fore, Back, Style  
 
-def print_colored_text():
-    print(Fore.RED + "This text is red")
-    print(Fore.GREEN + "This text is green")
-    print(Fore.BLUE + "This text is blue")
-    print(Back.YELLOW + "This background is yellow")
-    print(Style.RESET_ALL + "Back to normal text")    
+# def print_colored_text():
+#     print(Fore.RED + "This text is red")
+#     print(Fore.GREEN + "This text is green")
+#     print(Fore.BLUE + "This text is blue")
+#     print(Back.YELLOW + "This background is yellow")
+#     print(Style.RESET_ALL + "Back to normal text")    
+
+# if __name__ == "__main__":
+#     colorama.init(autoreset=True)  # Initialize colorama
+#     print_colored_text()
+#     # Example of printing colored text
+#     print(Fore.CYAN + "Hello, World in Cyan!")
+#     print(Fore.YELLOW + "Hello, World in Yellow!")    
+#     print(Fore.RED + "H" + Fore.GREEN + "E" + Fore.BLUE + "L" + Fore.YELLOW + "L" + Fore.MAGENTA + "O")     
+ 
+#     print(Fore.RED + "H" + Fore.GREEN + "E" + Fore.BLUE + "L" + Fore.YELLOW + "L" + Fore.MAGENTA + "O")
+#     print(Fore.RED + "H" * 10 + Fore.GREEN + "E" * 10 + Fore.BLUE + "L" * 10 + Fore.YELLOW + "L" * 10 + Fore.MAGENTA + "O" * 10)
+#     print(Fore.RED + "H" * 20 + Fore.GREEN + "E" * 20 + Fore.BLUE + "L" * 20 + Fore.YELLOW + "L" * 20 + Fore.MAGENTA + "O" * 20)
+#     print(Fore.RED + "H"        * 30 + Fore.GREEN + "E" * 30 + Fore.BLUE + "L" * 30 + Fore.YELLOW + "L" * 30 + Fore.MAGENTA + "O" * 30)         
+timezone = "Asia/Kathmandu" 
+import pytz
+from datetime import datetime 
+def print_current_time():
+    # Set the timezone
+    tz = pytz.timezone(timezone)
+    
+    # Get the current time in the specified timezone
+    current_time = datetime.now(tz)
+    
+    # Format the time as a string
+    formatted_time = current_time.strftime('%Y-%m-%d %H:%M:%S')
+    
+    print(f"Current time in {timezone}: {formatted_time}")
+if __name__ == "__main__":
+    print_current_time()
+    # Example usage
+    # print_current_time()  # Prints the current time in Asia/Kathmandu timezone
+    # print_current_time()  # Prints the current time in Asia/Kathmandu timezone
+
+import random
+import string
+
+def generate_password(length=12):
+    characters = string.digits + string.punctuation+string.ascii_uppercase + string.ascii_lowercase+ string.printable+ string.numbers
+ 
+    password = ''.join(random.choices(characters, k=length))
+    return password
 
 if __name__ == "__main__":
-    colorama.init(autoreset=True)  # Initialize colorama
-    print_colored_text()
-    # Example of printing colored text
-    print(Fore.CYAN + "Hello, World in Cyan!")
-    print(Fore.YELLOW + "Hello, World in Yellow!")    
-    print(Fore.RED + "H" + Fore.GREEN + "E" + Fore.BLUE + "L" + Fore.YELLOW + "L" + Fore.MAGENTA + "O")     
- 
-    print(Fore.RED + "H" + Fore.GREEN + "E" + Fore.BLUE + "L" + Fore.YELLOW + "L" + Fore.MAGENTA + "O")
-    print(Fore.RED + "H" * 10 + Fore.GREEN + "E" * 10 + Fore.BLUE + "L" * 10 + Fore.YELLOW + "L" * 10 + Fore.MAGENTA + "O" * 10)
-    print(Fore.RED + "H" * 20 + Fore.GREEN + "E" * 20 + Fore.BLUE + "L" * 20 + Fore.YELLOW + "L" * 20 + Fore.MAGENTA + "O" * 20)
-    print(Fore.RED + "H"        * 30 + Fore.GREEN + "E" * 30 + Fore.BLUE + "L" * 30 + Fore.YELLOW + "L" * 30 + Fore.MAGENTA + "O" * 30)         
+    print("Generated Password:", generate_password())
