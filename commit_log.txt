@@ -119,3 +119,49 @@ Git command failed: Command '['git', 'push']' returned non-zero exit status 128.
  2 files changed, 5 insertions(+)
 fatal: could not read Username for 'https://github.com': No such device or address
 Git command failed: Command '['git', 'push']' returned non-zero exit status 128.
+[main 82ffa75] Daily commit on 2025-08-03 11:00:03
+ 44 files changed, 712031 insertions(+)
+ create mode 100644 Nepal Pharma new11.docx
+ create mode 100644 Nepal_Pharma1.docx
+ create mode 100644 class/data/imagered.py
+ create mode 100644 docx_image_pixels.csv
+ create mode 100644 extracted_images/image_1.jpeg
+ create mode 100644 extracted_images/image_10.jpeg
+ create mode 100644 extracted_images/image_11.jpeg
+ create mode 100644 extracted_images/image_12.jpeg
+ create mode 100644 extracted_images/image_13.jpeg
+ create mode 100644 extracted_images/image_14.jpeg
+ create mode 100644 extracted_images/image_15.jpeg
+ create mode 100644 extracted_images/image_16.jpeg
+ create mode 100644 extracted_images/image_17.jpeg
+ create mode 100644 extracted_images/image_18.jpeg
+ create mode 100644 extracted_images/image_19.jpeg
+ create mode 100644 extracted_images/image_2.jpeg
+ create mode 100644 extracted_images/image_20.jpeg
+ create mode 100644 extracted_images/image_21.jpeg
+ create mode 100644 extracted_images/image_22.jpeg
+ create mode 100644 extracted_images/image_23.jpeg
+ create mode 100644 extracted_images/image_24.jpeg
+ create mode 100644 extracted_images/image_25.jpeg
+ create mode 100644 extracted_images/image_26.jpeg
+ create mode 100644 extracted_images/image_27.jpeg
+ create mode 100644 extracted_images/image_28.jpeg
+ create mode 100644 extracted_images/image_29.jpeg
+ create mode 100644 extracted_images/image_3.jpeg
+ create mode 100644 extracted_images/image_30.jpeg
+ create mode 100644 extracted_images/image_31.jpeg
+ create mode 100644 extracted_images/image_32.jpeg
+ create mode 100644 extracted_images/image_33.jpeg
+ create mode 100644 extracted_images/image_34.jpeg
+ create mode 100644 extracted_images/image_4.jpeg
+ create mode 100644 extracted_images/image_5.jpeg
+ create mode 100644 extracted_images/image_6.jpeg
+ create mode 100644 extracted_images/image_7.jpeg
+ create mode 100644 extracted_images/image_8.jpeg
+ create mode 100644 extracted_images/image_9.jpeg
+ create mode 100644 members_data.csv
+ create mode 100644 members_output.csv
+ create mode 100644 output.txt
+ create mode 100644 output1.txt
+fatal: could not read Username for 'https://github.com': No such device or address
+Git command failed: Command '['git', 'push']' returned non-zero exit status 128.
