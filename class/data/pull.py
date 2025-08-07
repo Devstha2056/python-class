@@ -83,3 +83,11 @@ def update_csv_with_contacts(input_csv, output_csv):
 
 if __name__ == "__main__":
     update_csv_with_contacts("schools_list.csv", "schools_list_with_contacts.csv")
+#code to reader image from file and write to csv
+# This code is for scraping contact details from school websites and updating a CSV file with the results.
+# This code is for daily commits to a Git repository, updating a log file, and pushing changes.
+import subprocess
+import os
+from datetime import datetime
+# Change to your Git repo
+os.chdir("/home/devendra/Documents/python class/school_scraper")
